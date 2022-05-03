@@ -1,0 +1,97 @@
+<nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+       <li class="breadcrumb-item d-block d-sm-none">
+          <a mat-button class="icon-button back-btn" matTooltip="Back" [routerLink]="['/tenant-repo-admin']">
+             <mat-icon aria-hidden="false">arrow_back</mat-icon>
+          </a>
+       </li>
+       <li class="breadcrumb-item flex-hide-sm">
+          <a href="#" [routerLink]="['/tenant-repo-admin']">Manage Repositories </a>
+          <mat-icon>navigate_next</mat-icon>
+       </li>
+       <li class="breadcrumb-item flex-hide-sm active" aria-current="page">New  Repositories</li>
+    </ol>
+  </nav>
+  <div class="title-block">
+    <div class="main-icon">
+        <mat-icon class="align-middle">source</mat-icon>
+    </div>
+    <div class="flex-grow-1">
+       <div class="title">
+        New Repository
+       </div>
+       <div class="title-info">
+          Create a new  Repository
+       </div>
+    </div>
+  </div>
+  <div class="content-wrapper">
+    <div class="row">
+       <div class="col-md-9 col-lg-6">
+          <form>
+           <div class="mb-4">
+              <span class="text-danger"> * </span> indicates required field
+           </div>
+             <div class="app-input-group">
+                <label>Repository  Name <span class="text-danger">*</span> </label>
+                <mat-form-field class="app-input-element" appearance="fill" floatLabel="never">
+                   <input matInput placeholder="Repository Name">
+                </mat-form-field>
+             </div>
+             <div class="app-input-group mb-4">
+                <label>Description </label>
+                <mat-form-field class="app-input-element  text-area" appearance="fill" floatLabel="never">
+                   <textarea matInput placeholder="Enter description"></textarea>
+                   <mat-hint align="end">1 / 100 characters</mat-hint>
+                </mat-form-field>
+             </div>
+
+             <div class="app-input-group">
+                <label>Path   <span class="text-danger">*</span> </label>
+                <mat-form-field class="app-input-element" appearance="fill" floatLabel="never">
+                   <input matInput placeholder="Path ">
+                </mat-form-field>
+             </div>
+         
+             
+             <div class="app-input-group">
+                <label>Security <span class="text-danger">*</span> </label>
+                <mat-form-field class="app-input-element" appearance="fill" floatLabel="never">
+                   <mat-select placeholder="Security"  class=" ">
+                      <mat-option *ngFor="let value of sortvalue" [value]="value.value">
+                      {{value.viewValue}}
+                      </mat-option>
+                   </mat-select>
+                </mat-form-field>
+             </div>
+
+             <div class="app-input-group">
+                <label>Repository Admin User <span class="text-danger">*</span> </label>
+                <label class="sub-label">Enter user name or email address of users to search </label>
+                <mat-form-field class="app-input-element position-relative " appearance="fill" floatLabel="never">
+                   <input [formControl]="myControl" [matAutocomplete]="auto" matInput placeholder="Enter user name or email address">
+                   <button mat-button class="icon-button add-btn" matTooltip="">
+                    <mat-icon aria-hidden="false">cancel</mat-icon>
+                  </button>
+                  <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+                     <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+                       {{option}}
+                     </mat-option>
+                   </mat-autocomplete>
+                </mat-form-field>
+             </div>
+
+             
+        
+
+             
+             <div class="border-top">
+                <div class="gap-2 py-3 d-flex justify-content-end">
+                    <button mat-button class="secondary-button me-3 me-md-2" [routerLink]="['/tenant-repo-admin']">Cancel</button>
+                    <button mat-button class=" primary-button ">Create Repository</button>
+                </div>
+             </div>
+          </form>
+       </div>
+    </div>
+  </div>

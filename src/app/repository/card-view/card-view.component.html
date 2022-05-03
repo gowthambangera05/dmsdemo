@@ -1,0 +1,206 @@
+<div class="card-view-panel-records">
+    <div class="row g-4 row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+        <div class="col">
+            <div class="card">
+                <div class="more-menu">
+                    <button mat-button class="icon-button" matTooltip="" [matMenuTriggerFor]="menu2">
+                        <mat-icon>more_vert</mat-icon>
+                    </button>
+                </div>
+                <div class="card-content" [routerLink]="['./folder-view']">
+                    <mat-icon class="folder-icon">folder</mat-icon>
+                    <h6 class="card-file-title text-truncate">Folder 1</h6>
+                    <p class="card-description text-truncate">01/05/2022 3:30 PM</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="more-menu">
+                    <button mat-button class="icon-button" matTooltip="" [matMenuTriggerFor]="menu2">
+                        <mat-icon>more_vert</mat-icon>
+                    </button>
+                </div>
+                <div class="card-content" [routerLink]="['./folder-view']">
+                <mat-icon class="folder-icon">folder</mat-icon>
+                <h6 class="card-file-title text-truncate">Folder 2</h6>
+                <p class="card-description text-truncate">01/05/2022, 3:30 PM</p>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="more-menu">
+                    <button mat-button class="icon-button" matTooltip="" [matMenuTriggerFor]="menu2">
+                        <mat-icon>more_vert</mat-icon>
+                    </button>
+                </div>
+                <div class="card-content" [routerLink]="['./folder-view']">
+                <mat-icon class="folder-icon">folder</mat-icon>
+                <h6 class="card-file-title text-truncate">Folder 3</h6>
+                <p class="card-description text-truncate">01/05/2022 3:30 PM</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="more-menu">
+                    <button mat-button class="icon-button" matTooltip="" [matMenuTriggerFor]="menu2">
+                        <mat-icon>more_vert</mat-icon>
+                    </button>
+                </div>
+                <div class="card-content" [routerLink]="['./folder-view']">
+                <mat-icon class="folder-icon">folder</mat-icon>
+                <h6 class="card-file-title text-truncate">File 1</h6>
+                <p class="card-description text-truncate">01/06/2022 3:30 PM</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="more-menu">
+                    <button mat-button class="icon-button" matTooltip="" [matMenuTriggerFor]="menu2">
+                        <mat-icon>more_vert</mat-icon>
+                    </button>
+                </div>
+                <div class="card-content" [routerLink]="['./folder-view']">
+                 <mat-icon class="folder-icon">folder</mat-icon>
+                <h6 class="card-file-title text-truncate">File 2</h6>
+                <p class="card-description text-truncate">01/06/2022 3:30 PM</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="more-menu">
+                    <button mat-button class="icon-button" matTooltip="" [matMenuTriggerFor]="menu">
+                        <mat-icon>more_vert</mat-icon>
+                    </button>
+                </div>
+                <div class="card-content" [routerLink]="">
+                <img class="card-image" src="assets/images/icon-xls.svg">
+                <h6 class="card-file-title text-truncate">File 3</h6>
+                <p class="card-description text-truncate">01/04/2022 3:30 PM</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="more-menu">
+                    <button mat-button class="icon-button" matTooltip="" [matMenuTriggerFor]="menu">
+                        <mat-icon>more_vert</mat-icon>
+                    </button>
+                </div>
+                <div class="card-content" [routerLink]="">
+                <img class="card-image" src="assets/images/icon-pdf.svg">
+                <h6 class="card-file-title text-truncate">File 4</h6>
+                <p class="card-description text-truncate">01/05/2022 3:30 PM</p>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="more-menu">
+                    <button mat-button class="icon-button" matTooltip="" [matMenuTriggerFor]="menu">
+                        <mat-icon>more_vert</mat-icon>
+                    </button>
+                </div>
+                <div class="card-content" [routerLink]="">
+                <img class="card-image" src="assets/images/icon-doc.svg">
+                <h6 class="card-file-title text-truncate">File 5</h6>
+                <p class="card-description text-truncate">01/05/2022 3:30 PM</p>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="more-menu">
+                    <button mat-button class="icon-button" matTooltip="" [matMenuTriggerFor]="menu">
+                        <mat-icon>more_vert</mat-icon>
+                    </button>
+                </div><div class="card-content" [routerLink]="">
+                <img class="card-image" src="assets/images/icon-xls.svg">
+                <h6 class="card-file-title text-truncate">File 6</h6>
+                <p class="card-description text-truncate">01/03/2022 3:30 PM</p>
+            </div>
+            </div>
+        </div>
+      
+    </div>
+</div>
+<div class="my-3 mt-4"> <span class="fw-bold"> 3</span> folders and <span class="fw-bold"> 5</span> files <span
+        class="fw-bold"> (12.6 MB)</span>
+</div>
+<mat-menu #menu="matMenu" class="menu-dropdown general-dropdown">
+    <ul class="menu-lists">
+       <li mat-menu-item>
+          <mat-icon>smart_display</mat-icon>
+          Preview
+       </li>
+       <li mat-menu-item>
+          <mat-icon>star_outline</mat-icon>
+          Favorite
+       </li>
+       <li mat-menu-item>
+          <mat-icon>share</mat-icon>
+          Share
+       </li>
+       <li mat-menu-item>
+          <mat-icon>download</mat-icon>
+          Download
+       </li>
+       <li class="divider" mat-menu-item>
+          <mat-icon>delete</mat-icon>
+          Delete
+       </li>
+       <li mat-menu-item>
+          <mat-icon>airline_stops</mat-icon>
+          Move To
+       </li>
+       <li class="divider" mat-menu-item>
+          <mat-icon>file_copy</mat-icon>
+          Copy To
+       </li>
+       <li mat-menu-item [routerLink]="['./file-details']">
+          <mat-icon>preview</mat-icon>
+          View Details
+       </li>
+    </ul>
+ </mat-menu>
+
+<mat-menu #menu2="matMenu" class="menu-dropdown general-dropdown">
+    <ul class="menu-lists">
+       <li mat-menu-item>
+          <mat-icon>smart_display</mat-icon>
+          Preview
+       </li>
+       <li mat-menu-item>
+          <mat-icon>star_outline</mat-icon>
+          Favorite
+       </li>
+       <li mat-menu-item>
+          <mat-icon>share</mat-icon>
+          Share
+       </li>
+       <li mat-menu-item>
+          <mat-icon>download</mat-icon>
+          Download
+       </li>
+       <li class="divider" mat-menu-item>
+          <mat-icon>delete</mat-icon>
+          Delete
+       </li>
+       <li mat-menu-item>
+          <mat-icon>airline_stops</mat-icon>
+          Move To
+       </li>
+       <li class="divider" mat-menu-item>
+          <mat-icon>file_copy</mat-icon>
+          Copy To
+       </li>
+       <li mat-menu-item [routerLink]="['./folder-details']">
+          <mat-icon>preview</mat-icon>
+          View Details
+       </li>
+    </ul>
+ </mat-menu>

@@ -1,0 +1,58 @@
+<div class="login-wrapper">
+    <div class="login-card">
+       <div class="text-center">
+         <img src="../assets/images/logo/logo.svg" class="logo" alt="Logo" />
+         <div class="company-name">
+            COMPANY NAME
+         </div>
+          <div class="welcome-note my-4">
+             <p class="welcome">Welcome to Documate</p>
+             <P>Please sign in to your account</P>
+          </div>
+       </div>
+       <div class="message-info" style="display: none;">
+         <div class="message-title invalid-text">Invalid User Credentials</div>
+         <ul>
+            <li>Your sign in credentials are invalid.</li>
+            <li>Please verify the username/password and try again.</li>
+            <li>If you have received this message error, please contact the Gainwell HelpDesk toll-free at 855-55HMSIT (855-554-6748).</li>
+         </ul>
+       </div>
+       <div class="message-info" style="display: none;">
+         <div class="message-title">Logged Out</div>
+         <p>You have successfully logged out of this Gainwell 360 application. Please close your browser or sign back in if needed.</p>
+       </div>
+       <div class="app-input-group">
+          <label for="Username">Username</label>
+          <mat-form-field class="app-input-element" floatLabel="never">
+             <input matInput id="Username" type="text" placeholder="Username" value="">
+          </mat-form-field>
+          
+       </div>
+       <div class="app-input-group">
+         <label for="password">Password</label>
+          <mat-form-field class="app-input-element password-input" floatLabel="never">
+             <input matInput id="password" [type]="passwordtype" placeholder="Password" value="">
+             <button mat-button (click)="showPassword()" class="icon-button" [matTooltip]="passwordtype==='password'?'Show Password':'Hide Password'">
+               <mat-icon *ngIf="passwordtype==='password'">visibility</mat-icon>
+               <mat-icon *ngIf="passwordtype!=='password'">visibility_off</mat-icon>
+            </button>
+          </mat-form-field>
+          
+            <div class="mt-2 text-end">
+               <a href="#">Forgot Password?</a>
+            </div>
+       </div>
+       <button mat-raised-button color="primary" class="primary-button sign-in-button mt-2 w-100"
+       [routerLink]="['../quick-access/dashboard']">Sign In</button>
+    </div>
+    <div class="row g-0 mt-3 login-footer">
+       <div class="col">
+          <a href="">Terms & Conditions</a>
+       </div>
+       <div class="col">
+         <div class="col-auto text-end"><span class="me-2 powerd-by">Powered By</span><img alt="Logo" class="footer-logo" src="../../../assets/images/logo/qdoc-logo.png"></div>
+       </div>
+    </div>
+ </div>
+ 

@@ -1,0 +1,115 @@
+.mat-button {
+    &.icon-button {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        padding: 0 5px;
+        min-width: 40px;
+        display: inline-flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        padding: 0 5px;
+        &:hover {
+            background-color: rgba(60,64,67,0.078);
+        }
+    }
+}
+.mat-menu-item .mat-icon {
+  margin-right: 14px;
+}
+.mat-icon {
+    color:$dark-medium;
+}
+.mat-menu-item .mat-icon-no-color, .mat-menu-submenu-icon {
+  color:$dark-medium;
+}
+.icon-repository,
+.icon-recent,
+.icon-my-favourites,
+.icon-shared,
+.icon-dashboard,
+.icon-quick-access,
+.icon-trash,
+.icon-manage-repository,
+.icon-notification,
+.icon-help,
+.icon-person,
+.icon-edit,
+.icon-change-password,
+.icon-logout,
+.icon-template
+{
+    background-repeat: no-repeat;
+    height: 18px;
+    width: 18px;
+    background-image: url("../images/nav_icons/icon-repository.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .icon-recent {
+    background-image: url("../images/nav_icons/icon-recent.svg");
+  }
+  .icon-my-favourites {
+    background-image: url("../images/nav_icons/icon-my-favourites.svg");
+  }
+  .icon-shared {
+    background-image: url("../images/nav_icons/icon-share.svg");
+  }
+  .icon-dashboard {
+    background-image: url("../images/nav_icons/icon-dashboard.svg");
+  }
+  .icon-quick-access {
+    background-image: url("../images/nav_icons/icon-quick-access.svg");
+  }
+  .icon-trash, .icon-logout,  .icon-edit, .icon-change-password {
+    width: 22px;
+    height: 22px;
+  }
+  .icon-notification, .icon-help, .icon-template {
+    height: 20px;
+    width: 20px;
+  }
+  .icon-person {
+    height: 24px;
+    width: 24px;
+  }
+  .icon-trash {
+
+    background-image: url("../images/nav_icons/icon-trash.svg");
+  }
+  .icon-manage-repository {
+    background-image: url("../images/nav_icons/icon-manage-repository.svg");
+  }
+.icon-notification {
+  background-image: url("../images/nav_icons/icon-notification.svg");
+
+  }
+
+.icon-person{
+  background-image: url("../images/nav_icons/icon-person.svg");
+ 
+}
+
+.icon-profile-photo{
+  background-image: url("../images/user-profile-photo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.icon-edit{
+  background-image: url("../images/nav_icons/icon-edit.svg");
+}
+.icon-change-password {
+  background-image: url("../images/nav_icons/icon-change-password.svg");
+}
+.icon-logout {
+  background-image: url("../images/nav_icons/icon-logout.svg");
+}
+.icon-template {
+  background-image: url("../images/nav_icons/icon-template.svg");
+}

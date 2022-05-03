@@ -1,0 +1,77 @@
+<!-- <h2 mat-dialog-title class="has-close-icon">Edit Metadata Template
+  <button mat-button class="icon-button" matTooltip="Close" mat-dialog-close>
+     <mat-icon>Edit Metadata Template</mat-icon>
+  </button>
+</h2> -->
+<h2 mat-dialog-title class="has-close-icon">Edit Metadata Template
+  <button mat-button class="icon-button" matTooltip="Close" mat-dialog-close>
+    <mat-icon>close</mat-icon>
+  </button>
+</h2>
+<mat-dialog-content class="mat-typography min-w-500">
+  <div class="sub-breadcrumb rounded mb-2 ">Properties of <span class="fw-bold">"Custom Template 1"</span></div>
+
+  <div class="row mb-3 align-items-center mt-2">
+    <div class="col-auto mt-0">
+      <label for="inputPassword6" class="col-form-label">ID:</label>
+      <span class=" fw-bold">
+        123456
+      </span>
+    </div>
+    <div class="col-auto mt-0">
+      <label for="inputPassword6" class="col-form-label">Date Created:</label>
+      <span class=" fw-bold">
+        03/15/2021 09:00 AM
+      </span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 col-md-6">
+      <div class="app-input-group">
+        <label>Template Name<span class="text-danger"> * </span></label>
+        <mat-form-field class="app-input-element" appearance="fill" floatLabel="never">
+          <input matInput placeholder=" Name" value="Custom Template 1">
+        </mat-form-field>
+      </div>
+      <div class="app-input-group mb-4 pb-2">
+        <label>Description<span class="text-danger"> * </span></label>
+        <mat-form-field class="app-input-element" appearance="fill" floatLabel="never">
+          <textarea matInput
+            placeholder="Enter description">Description text appears here in multiple lines related to the file in context which can be viewed.</textarea>
+          <mat-hint align="end">1 / 100 characters</mat-hint>
+        </mat-form-field>
+      </div>
+     
+    </div>
+    <div class="col-12 col-md-6">
+      <div class="app-input-group">
+        <label>Author<span class="text-danger"> * </span></label>
+        <mat-form-field class="app-input-element" appearance="fill" floatLabel="never">
+          <input matInput placeholder=" Name" value="Srikanta Prakash">
+        </mat-form-field>
+      </div>
+      <div class="app-input-group">
+        <label>Set as Default</label>
+        <section class="">
+          <mat-checkbox></mat-checkbox>
+        </section>
+      </div>
+ 
+    </div>
+  </div>
+
+ 
+ 
+  
+
+ 
+
+
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <div class="me-auto  indicates">
+    <span class="text-danger"> * </span> indicates required field
+ </div>
+  <button mat-button class="secondary-button me-2" mat-dialog-close>Cancel</button>
+  <button mat-button class=" primary-button" [mat-dialog-close]="true" cdkFocusInitial>Save </button>
+</mat-dialog-actions>
